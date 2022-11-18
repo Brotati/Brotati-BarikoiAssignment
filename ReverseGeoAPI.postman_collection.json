@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "New Request",
+			"name": "Getting Null Response",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -38,6 +38,104 @@
 						{
 							"key": "pauroshova",
 							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Checking LocationType",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base_URL}}/search/reverse/{{API_KEY}}/geocode?longitude= 90.296760&latitude=22.796983&location_type=true",
+					"host": [
+						"{{Base_URL}}"
+					],
+					"path": [
+						"search",
+						"reverse",
+						"{{API_KEY}}",
+						"geocode"
+					],
+					"query": [
+						{
+							"key": "longitude",
+							"value": " 90.296760"
+						},
+						{
+							"key": "latitude",
+							"value": "22.796983"
+						},
+						{
+							"key": "location_type",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Setting Reponses in Bangla",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base_URL}}/search/reverse/{{API_KEY}}/geocode?longitude=90.409937&latitude=23.775259&bangla=true",
+					"host": [
+						"{{Base_URL}}"
+					],
+					"path": [
+						"search",
+						"reverse",
+						"{{API_KEY}}",
+						"geocode"
+					],
+					"query": [
+						{
+							"key": "longitude",
+							"value": "90.409937"
+						},
+						{
+							"key": "latitude",
+							"value": "23.775259"
+						},
+						{
+							"key": "bangla",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Checking longitude and latitude in different places",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base_URL}}/search/reverse/{{API_KEY}}/geocode?longitude= 90.412770&latitude=23.770938",
+					"host": [
+						"{{Base_URL}}"
+					],
+					"path": [
+						"search",
+						"reverse",
+						"{{API_KEY}}",
+						"geocode"
+					],
+					"query": [
+						{
+							"key": "longitude",
+							"value": " 90.412770"
+						},
+						{
+							"key": "latitude",
+							"value": "23.770938"
 						}
 					]
 				}
