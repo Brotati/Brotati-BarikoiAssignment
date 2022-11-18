@@ -22,8 +22,6 @@ search_result = driver.find_element(By.CLASS_NAME, "autocomplete-content")
 search_result_list = search_result.find_elements(By.TAG_NAME, "li")
 search_result_list[0].click()
 
-colse_icon = driver.find_element(By.CLASS_NAME, "close-icon").click()
-
 
 while True:
     pass
