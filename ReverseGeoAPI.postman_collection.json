@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "514dbffe-7e93-4bea-afe8-f5437b7ec996",
+		"name": "ReverseGeoAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24444496"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base_URL}}/search/reverse/{{API_KEY}}/geocode?longitude=88.524339&latitude=22.727170&union=true&pauroshova=true",
+					"host": [
+						"{{Base_URL}}"
+					],
+					"path": [
+						"search",
+						"reverse",
+						"{{API_KEY}}",
+						"geocode"
+					],
+					"query": [
+						{
+							"key": "longitude",
+							"value": "88.524339"
+						},
+						{
+							"key": "latitude",
+							"value": "22.727170"
+						},
+						{
+							"key": "union",
+							"value": "true"
+						},
+						{
+							"key": "pauroshova",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Base_URL",
+			"value": "https://barikoi.xyz/v1/api"
+		},
+		{
+			"key": "API_KEY",
+			"value": "NDM0NzpQVjhISzhFUTgw",
+			"type": "string"
+		}
+	]
+}
